@@ -13,6 +13,11 @@ async function loadMatrix() {
   // Header row (plants)
   const headerRow = document.createElement('tr');
 
+  const corner = document.createElement('th');
+  corner.textContent = ""; // leave blank
+  headerRow.appendChild(corner);
+
+  
   plants.forEach(plant => {
     const th = document.createElement('th');
     th.textContent = plant;
