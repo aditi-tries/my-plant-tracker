@@ -1,10 +1,11 @@
 [
   {
-    "name": "Monstera",
+    "name": "chomu",
+    "type": "money plant",
     "updates": [
       {
-        "date": "2025-11-01",
-        "note": "New leaf unfurled!",
+        "date": "nov week 1",
+        "note": "growing slowly",
         "image": "data/images/plant-1.webp"
       }
     ]
