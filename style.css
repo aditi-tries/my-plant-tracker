@@ -20,6 +20,7 @@ header h1 {
 table.matrix {
   border-collapse: collapse;
   width: 100%;
+  table-layout: fixed;   /* 👈 makes all columns equal width */
   margin-top: 20px;
   background: transparent;
   border-radius: 12px;
@@ -31,7 +32,8 @@ th, td {
   text-align: center;
   vertical-align: top;
   padding: 8px;
-  border: none; /* removes visible grid lines */
+  border: none;
+  width: 200px;
 }
 
 th {
@@ -58,6 +60,8 @@ td:nth-child(even) .plant-img:hover {
 td p {
   font-size: 0.9rem;
   margin-top: 4px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 
