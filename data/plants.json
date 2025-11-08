@@ -1,6 +1,6 @@
 
 {
-  "plants": ["chomu", "monstera", "baby zz"],
+  "plants": ["chomu", "monstera", "baby_zz"],
   "weeks": [
     {
       "week": "2025-11-08",
@@ -13,7 +13,7 @@
           "note": "very few mealy bugs left. added some more bug spray.",
           "image": "data/images/monstera.webp"
         },
-        "baby zz": {
+        "baby_zz": {
           "note": "i think it has grown to the max. needs to be repot",
           "image": "data/images/small-zz.webp"
         }
