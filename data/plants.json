@@ -1,13 +1,41 @@
-[
-  {
-    "name": "chomu",
-    "type": "money plant",
-    "updates": [
-      {
-        "date": "nov week 1",
-        "note": "growing slowly",
-        "image": "data/images/plant-1.webp"
+
+{
+  "plants": ["chomu", "Pothos", "Cactus"],
+  "weeks": [
+    {
+      "week": "2025-11-08",
+      "updates": {
+        "chomu": {
+          "type": "money plant",
+          "note": "growing slowly",
+          "image": "data/images/plant-1.webp"
+        },
+        "Pothos": {
+          "note": "Started trailing more!",
+          "image": "data/images/pothos-week1.webp"
+        },
+        "Cactus": {
+          "note": "No visible change yet 🌵",
+          "image": "data/images/cactus-week1.webp"
+        }
       }
-    ]
-  }
-]
+    },
+    {
+      "week": "2025-11-15",
+      "updates": {
+        "Monstera": {
+          "note": "Added moss pole",
+          "image": "data/images/monstera-week2.webp"
+        },
+        "Pothos": {
+          "note": "Leaves getting larger",
+          "image": "data/images/pothos-week2.webp"
+        },
+        "Cactus": {
+          "note": "Slight new growth!",
+          "image": "data/images/cactus-week2.webp"
+        }
+      }
+    }
+  ]
+}
