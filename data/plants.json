@@ -19,22 +19,5 @@
         }
       }
     },
-    {
-      "week": "2025-11-15",
-      "updates": {
-        "chomu": {
-          "note": "Added moss pole",
-          "image": "data/images/monstera-week2.webp"
-        },
-        "monstera": {
-          "note": "Leaves getting larger",
-          "image": "data/images/pothos-week2.webp"
-        },
-        "baby zz": {
-          "note": "Slight new growth!",
-          "image": "data/images/cactus-week2.webp"
-        }
-      }
-    }
   ]
 }
