@@ -13,8 +13,8 @@ header h1 { margin-bottom: 1rem; }
 }
 
 .update img:hover {
-  transform: rotate(3deg) scale(1.05);
-  filter: drop-shadow(0 8px 12px rgba(0,0,0,0.25));
+  transform: rotate(2deg) scale(1.02);
+  filter: drop-shadow(0 4px 4px rgba(0,0,0,0.25));
 }
 
 .update:nth-child(even) img:hover {
