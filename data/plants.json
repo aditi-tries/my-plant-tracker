@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Monstera",
+    "updates": [
+      {
+        "date": "2025-11-01",
+        "note": "New leaf unfurled!",
+        "image": "data/images/monstera-week1.jpg"
+      }
+    ]
+  }
+]
