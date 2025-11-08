@@ -55,8 +55,8 @@ td img.plant-img {
 
 /* hover effect */
 .plant-img:hover {
-  transform: rotate(2deg) scale(1.05);
-  filter: drop-shadow(0 6px 8px rgba(0,0,0,0.25));
+  transform: rotate(2deg) scale(1.03);
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.25));
 }
 
 td:nth-child(even) .plant-img:hover {
