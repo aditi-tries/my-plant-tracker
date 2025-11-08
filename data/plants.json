@@ -1,37 +1,36 @@
 
 {
-  "plants": ["chomu", "Pothos", "Cactus"],
+  "plants": ["chomu", "monstera", "baby zz"],
   "weeks": [
     {
       "week": "2025-11-08",
       "updates": {
         "chomu": {
-          "type": "money plant",
           "note": "growing slowly",
           "image": "data/images/plant-1.webp"
         },
-        "Pothos": {
-          "note": "Started trailing more!",
-          "image": "data/images/pothos-week1.webp"
+        "monstera": {
+          "note": "very few mealy bugs left. added some more bug spray.",
+          "image": "data/images/monstera.webp"
         },
-        "Cactus": {
-          "note": "No visible change yet 🌵",
-          "image": "data/images/cactus-week1.webp"
+        "baby zz": {
+          "note": "i think it has grown to the max. needs to be repot",
+          "image": "data/images/baby zz.webp"
         }
       }
     },
     {
       "week": "2025-11-15",
       "updates": {
-        "Monstera": {
+        "chomu": {
           "note": "Added moss pole",
           "image": "data/images/monstera-week2.webp"
         },
-        "Pothos": {
+        "monstera": {
           "note": "Leaves getting larger",
           "image": "data/images/pothos-week2.webp"
         },
-        "Cactus": {
+        "baby zz": {
           "note": "Slight new growth!",
           "image": "data/images/cactus-week2.webp"
         }
