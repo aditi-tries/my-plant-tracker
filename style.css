@@ -1,23 +1,37 @@
-body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: transparent; padding:20px; }
-header h1 { margin-bottom: 1rem; }
-.plant { background:white; padding:12px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.06); margin-bottom:16px; }
-.update { margin-top:8px; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: transparent;
+  padding: 20px;
+}
 
+header h1 {
+  margin-bottom: 1rem;
+}
 
+.plant {
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  margin-bottom: 16px;
+}
 
-table.matrix {
+/* Matrix layout */
 table.matrix {
   border-collapse: collapse;
-  border: none;
   width: 100%;
   margin-top: 20px;
   background: transparent;
   border-radius: 12px;
   overflow: hidden;
+  border: none;
 }
 
 th, td {
-  border: none;
+  text-align: center;
+  vertical-align: top;
+  padding: 8px;
+  border: none; /* removes visible grid lines */
 }
 
 th {
@@ -31,14 +45,19 @@ td img.plant-img {
   background-color: transparent;
 }
 
+/* hover effect */
+.plant-img:hover {
+  transform: rotate(2deg) scale(1.05);
+  filter: drop-shadow(0 6px 8px rgba(0,0,0,0.25));
+}
+
+td:nth-child(even) .plant-img:hover {
+  transform: rotate(-2deg) scale(1.05);
+}
 
 td p {
   font-size: 0.9rem;
   margin-top: 4px;
 }
 
-.plant-img:hover {
-  transform: rotate(2deg) scale(1.05);
-  filter: drop-shadow(0 6px 8px rgba(0,0,0,0.25));
-}
 
