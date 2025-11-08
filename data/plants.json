@@ -19,19 +19,19 @@
         }
         "tripod": {
           "note": "it looks like it's going through it but it's a fighter. it will survive.",
-          "image": "data/images/small-zz.webp"
+          "image": "data/images/tripod.webp"
         }
         "topper": {
           "note": "this is my smartest child. it is thriving.",
-          "image": "data/images/small-zz.webp"
+          "image": "data/images/topper.webp"
         }
         "gin": {
           "note": "it's looking nice as ever",
-          "image": "data/images/small-zz.webp"
+          "image": "data/images/gin.webp"
         }
         "paglu": {
           "note": "potted this from some money plant cuttings today!",
-          "image": "data/images/small-zz.webp"
+          "image": "data/images/paglu.webp"
         }
       }
     }
