@@ -1,31 +1,63 @@
-async function loadPlants() {
-  try {
-    const res = await fetch('data/plants.json');
-    if (!res.ok) throw new Error('Failed to load plants.json');
-    const plants = await res.json();
-    const container = document.getElementById('plants');
+async function loadMatrix() {
+  const res = await fetch('data/plants.json?nocache=' + new Date().getTime());
+  const data = await res.json();
+
+  const { plants, weeks } = data;
+  const container = document.getElementById('matrix-container');
+
+  // Create table
+  const table = document.createElement('table');
+  table.className = 'matrix';
+
+  // Header row (plants)
+  const headerRow = document.createElement('tr');
+  const corner = document.createElement('th');
+  corner.textContent = "Week / Plant";
+  headerRow.appendChild(corner);
+
+  plants.forEach(plant => {
+    const th = document.createElement('th');
+    th.textContent = plant;
+    headerRow.appendChild(th);
+  });
+  table.appendChild(headerRow);
+
+  // Rows for each week
+  weeks.forEach(weekData => {
+    const row = document.createElement('tr');
+
+    const weekCell = document.createElement('th');
+    const date = new Date(weekData.week);
+    weekCell.textContent = date.toDateString();
+    row.appendChild(weekCell);
+
     plants.forEach(plant => {
-      const plantDiv = document.createElement('section');
-      plantDiv.className = 'plant';
-      plantDiv.innerHTML = `<h2>${plant.name}</h2>`;
-      plant.updates.forEach(update => {
-        const u = document.createElement('div');
-        u.className = 'update';
-        u.innerHTML = `<p><strong>${update.date}</strong> — ${update.note}</p>`;
-        if (update.image) {
-          const img = document.createElement('img');
-          img.src = update.image;
-          img.alt = `${plant.name} photo`;
-          u.appendChild(img);
-        }
-        plantDiv.appendChild(u);
-      });
-      container.appendChild(plantDiv);
+      const cell = document.createElement('td');
+      const update = weekData.updates[plant];
+
+      if (update) {
+        const img = document.createElement('img');
+        img.src = update.image;
+        img.alt = plant;
+        img.className = 'plant-img';
+
+        const note = document.createElement('p');
+        note.textContent = update.note;
+
+        cell.appendChild(img);
+        cell.appendChild(note);
+      } else {
+        cell.textContent = "—"; // no update yet
+      }
+
+      row.appendChild(cell);
     });
-  } catch (err) {
-    document.getElementById('plants').textContent = 'Error loading plant data.';
-    console.error(err);
-  }
+
+    table.appendChild(row);
+  });
+
+  container.appendChild(table);
 }
 
-loadPlants();
+loadMatrix();
+
