@@ -3,7 +3,8 @@ async function loadMatrix() {
   const data = await res.json();
 
   const { plants, weeks } = data;
-  const container = document.getElementById('matrix-container');
+  const container = document.querySelector('#matrix-scroll');
+
 
   // Create table
   const table = document.createElement('table');
