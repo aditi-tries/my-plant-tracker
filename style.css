@@ -19,12 +19,11 @@ header h1 {
 /* Matrix layout */
 table.matrix {
   border-collapse: collapse;
-  width: 100%;
-  table-layout: fixed;   /* 👈 makes all columns equal width */
-  margin-top: 20px;
+  table-layout: fixed;    /* equal column widths */
+  min-width: 600px;       /* ensures table stays wider than small screens */
   background: transparent;
+  margin-top: 20px;
   border-radius: 12px;
-  overflow: hidden;
   border: none;
 }
 
@@ -33,7 +32,7 @@ th, td {
   vertical-align: top;
   padding: 8px;
   border: none;
-  width: 100px;
+  width: 100px;           /* fixed column width */
 }
 
 th {
@@ -45,6 +44,13 @@ td img.plant-img {
   border-radius: 8px;
   transition: transform 0.3s ease, filter 0.3s ease;
   background-color: transparent;
+}
+
+#matrix-scroll {
+  overflow-x: auto;       /* enables horizontal scroll when too wide */
+  overflow-y: hidden;
+  width: 100%;
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
 }
 
 /* hover effect */
