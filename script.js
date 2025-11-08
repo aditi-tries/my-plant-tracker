@@ -10,12 +10,14 @@ async function loadMatrix() {
   const table = document.createElement('table');
   table.className = 'matrix';
 
-  // Header row (plants)
-  const headerRow = document.createElement('tr');
+ // Header row (plants)
+const headerRow = document.createElement('tr');
 
-  const corner = document.createElement('th');
-  corner.textContent = ""; // leave blank
-  headerRow.appendChild(corner);
+// blank top-left corner cell (keeps alignment)
+const corner = document.createElement('th');
+corner.textContent = ""; // leave blank
+headerRow.appendChild(corner);
+
 
   
   plants.forEach(plant => {
