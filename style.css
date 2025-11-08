@@ -9,6 +9,7 @@ header h1 { margin-bottom: 1rem; }
   margin-top: 6px;
   border-radius: 0; /* remove rounding for cutouts */
   transition: transform 0.3s ease, filter 0.3s ease;
+  background-color: transparent;
 }
 
 .update img:hover {
@@ -19,6 +20,4 @@ header h1 { margin-bottom: 1rem; }
 .update:nth-child(even) img:hover {
   transform: rotate(-2deg) scale(1.03);
 }
-.update img {
-  background-color: transparent;
-}
+
