@@ -2,4 +2,19 @@ body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; ba
 header h1 { margin-bottom: 1rem; }
 .plant { background:white; padding:12px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.06); margin-bottom:16px; }
 .update { margin-top:8px; }
-.update img { max-width:400px; width:100%; border-radius:8px; display:block; margin-top:6px; }
+.update img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin-top: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.update img:hover {
+  transform: rotate(2deg) scale(1.03);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.update:nth-child(even) img:hover {
+  transform: rotate(-2deg) scale(1.03);
+}
