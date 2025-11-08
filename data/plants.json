@@ -1,4 +1,3 @@
-
 {
   "plants": ["tripod", "monstera", "topper", "baby_zz", "gin", "chomu", "paglu"],
   "weeks": [
@@ -16,19 +15,19 @@
         "baby_zz": {
           "note": "i think it has grown as much as it could in this pot. it needs to be repot",
           "image": "data/images/small-zz.webp"
-        }
+        },
         "tripod": {
           "note": "it looks like it's going through it but it's a fighter. it will survive.",
           "image": "data/images/tripod.webp"
-        }
+        },
         "topper": {
           "note": "this is my smartest child. it is thriving.",
           "image": "data/images/topper.webp"
-        }
+        },
         "gin": {
           "note": "it's looking nice as ever",
           "image": "data/images/gin.webp"
-        }
+        },
         "paglu": {
           "note": "potted this from some money plant cuttings today!",
           "image": "data/images/paglu.webp"
@@ -37,3 +36,4 @@
     }
   ]
 }
+
