@@ -1,6 +1,6 @@
 
 {
-  "plants": ["chomu", "monstera", "baby_zz"],
+  "plants": ["tripod", "monstera", "topper", "baby_zz", "gin", "chomu", "paglu"],
   "weeks": [
     {
       "week": "2025-11-08",
@@ -10,11 +10,27 @@
           "image": "data/images/plant-1.webp"
         },
         "monstera": {
-          "note": "very few mealy bugs left. added some more bug spray.",
+          "note": "added some mealy bug spray today. very few mealy bugs left!",
           "image": "data/images/monstera.webp"
         },
         "baby_zz": {
-          "note": "i think it has grown to the max. needs to be repot",
+          "note": "i think it has grown as much as it could in this pot. it needs to be repot",
+          "image": "data/images/small-zz.webp"
+        }
+        "tripod": {
+          "note": "it looks like it's going through it but it's a fighter. it will survive.",
+          "image": "data/images/small-zz.webp"
+        }
+        "topper": {
+          "note": "this is my smartest child. it is thriving.",
+          "image": "data/images/small-zz.webp"
+        }
+        "gin": {
+          "note": "it's looking nice as ever",
+          "image": "data/images/small-zz.webp"
+        }
+        "paglu": {
+          "note": "potted this from some money plant cuttings today!",
           "image": "data/images/small-zz.webp"
         }
       }
