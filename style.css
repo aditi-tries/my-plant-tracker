@@ -101,40 +101,50 @@ td p {
 
 /* ----- FOOTER ----- */
 footer {
-  margin-top: auto; /* pushes footer to bottom */
+  position: fixed;              /* make it sticky at the bottom */
+  bottom: 0;
+  left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
-  border-top: 2px solid #ffc0cb;
-  font-family: "Poppins", sans-serif;
-  color: #ff7fab;
+  padding: 1rem 1.5rem;
   background-color: white;
-  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.05); /* subtle shadow for separation */
+  font-family: "Poppins", sans-serif;
+  color: #4caf50;               /* nice planty green */
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05); /* subtle lift instead of pink line */
+  overflow-x: hidden;           /* prevents horizontal scroll */
+  box-sizing: border-box;
 }
 
 .footer-left {
   font-size: 1rem;
-  font-style: italic; /* left text italic */
+  white-space: nowrap;          /* prevent wrapping */
 }
 
-/* ----- FOOTER ICONS ----- */
 .footer-right {
   display: flex;
   gap: 1rem;
+  flex-wrap: nowrap;            /* keeps icons in one line */
+  overflow: hidden;             /* ensures they don’t push footer width */
 }
 
-.footer-right img {
-  width: 28px;
-  height: 28px;
+.footer-right a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
+  filter: invert(44%) sepia(13%) saturate(1555%) hue-rotate(87deg) brightness(91%) contrast(91%);
   transition: transform 0.2s ease, filter 0.3s ease;
-  filter: brightness(0) saturate(100%) invert(48%) sepia(66%) saturate(420%) hue-rotate(65deg) brightness(96%) contrast(89%);
 }
 
-/* hover effect on icons */
-.footer-right img:hover {
-  transform: scale(1.2);
-  filter: brightness(0) saturate(100%) invert(55%) sepia(93%) saturate(480%) hue-rotate(90deg) brightness(100%) contrast(90%);
+.footer-icon:hover {
+  transform: scale(1.15);
+  filter: invert(30%) sepia(60%) saturate(600%) hue-rotate(90deg) brightness(100%) contrast(90%);
 }
+
 
