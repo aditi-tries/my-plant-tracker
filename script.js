@@ -1,3 +1,7 @@
+// preload pop sound once
+const popSound = new Audio('data/sounds/pop.mp3');
+popSound.volume = 0.3;
+
 async function loadMatrix() {
   try {
     const res = await fetch('data/plants.json?nocache=' + new Date().getTime());
@@ -14,34 +18,29 @@ async function loadMatrix() {
 
     // top header row
     const headerRow = document.createElement('tr');
-    
-    // blank top-left corner cell
     const corner = document.createElement('th');
-    corner.textContent = ""; // leave blank
+    corner.textContent = "";
     headerRow.appendChild(corner);
-    
-    // heading cell (spanning the rest of the columns)
+
     const headingCell = document.createElement('th');
     headingCell.textContent = "🌱 My Plant Tracker";
-    headingCell.colSpan = plants.length; // span across all plant columns
+    headingCell.colSpan = plants.length;
     headingCell.className = 'main-heading';
     headerRow.appendChild(headingCell);
-    
     table.appendChild(headerRow);
-    
-    // now add second row for plant names
+
+    // second row for plant names
     const nameRow = document.createElement('tr');
-    const emptyTh = document.createElement('th'); // keep column alignment
+    const emptyTh = document.createElement('th');
     emptyTh.textContent = "";
     nameRow.appendChild(emptyTh);
-    
+
     plants.forEach(plant => {
       const th = document.createElement('th');
       th.textContent = plant;
       nameRow.appendChild(th);
     });
     table.appendChild(nameRow);
-
 
     // body
     weeks.forEach(weekData => {
@@ -50,7 +49,6 @@ async function loadMatrix() {
       const date = new Date(weekData.week);
       const options = { day: 'numeric', month: 'short' };
       weekCell.textContent = date.toLocaleDateString('en-GB', options).replace('.', '');
-
       row.appendChild(weekCell);
 
       plants.forEach(plant => {
@@ -62,15 +60,12 @@ async function loadMatrix() {
           img.src = update.image;
           img.alt = plant;
           img.className = 'plant-img';
-          // --- pop sound on hover ---
-          const popSound = new Audio('data/sounds/pop.mp3');
-          popSound.volume = 0.3;
+          img.loading = 'lazy';
 
           img.addEventListener('mouseenter', () => {
-          const sound = popSound.cloneNode(); // allows rapid replays
-          sound.play().catch(() => {}); // ignore autoplay errors
-});
-
+            const sound = popSound.cloneNode();
+            sound.play().catch(() => {});
+          });
 
           const note = document.createElement('p');
           note.textContent = update.note;
@@ -95,6 +90,4 @@ async function loadMatrix() {
 
 loadMatrix();
 
-
-loadMatrix();
 
