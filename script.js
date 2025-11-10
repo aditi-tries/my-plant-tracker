@@ -12,18 +12,36 @@ async function loadMatrix() {
     const table = document.createElement('table');
     table.className = 'matrix';
 
-    // header
+    // top header row
     const headerRow = document.createElement('tr');
+    
+    // blank top-left corner cell
     const corner = document.createElement('th');
-    corner.textContent = "";
+    corner.textContent = ""; // leave blank
     headerRow.appendChild(corner);
-
+    
+    // heading cell (spanning the rest of the columns)
+    const headingCell = document.createElement('th');
+    headingCell.textContent = "🌱 My Plant Tracker";
+    headingCell.colSpan = plants.length; // span across all plant columns
+    headingCell.className = 'main-heading';
+    headerRow.appendChild(headingCell);
+    
+    table.appendChild(headerRow);
+    
+    // now add second row for plant names
+    const nameRow = document.createElement('tr');
+    const emptyTh = document.createElement('th'); // keep column alignment
+    emptyTh.textContent = "";
+    nameRow.appendChild(emptyTh);
+    
     plants.forEach(plant => {
       const th = document.createElement('th');
       th.textContent = plant;
-      headerRow.appendChild(th);
+      nameRow.appendChild(th);
     });
-    table.appendChild(headerRow);
+    table.appendChild(nameRow);
+
 
     // body
     weeks.forEach(weekData => {
