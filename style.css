@@ -92,31 +92,32 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 20px;
-  margin-top: 30px;
-  border-top: 1px solid rgba(0,0,0,0.1);
-  font-size: 0.9rem;
-  color: #444;
+  padding: 1.5rem 2rem;
+  border-top: 2px solid #ffc0cb;
+  font-family: "Poppins", sans-serif;
+  color: #ff7fab;
+  background-color: white;
 }
 
 .footer-left {
-  margin: 0;
+  font-size: 1rem;
 }
 
-.footer-right a {
-  margin-left: 12px;
-  display: inline-flex;
-  align-items: center;
+.footer-right {
+  display: flex;
+  gap: 1rem;
 }
 
-.footer-right img {
-  width: 20px;
-  height: 20px;
-  opacity: 0.8;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+/* Consistent icon look */
+.footer-icon {
+  width: 28px;
+  height: 28px;
+  filter: invert(61%) sepia(51%) saturate(458%) hue-rotate(305deg) brightness(101%) contrast(97%);
+  transition: transform 0.2s ease, filter 0.3s ease;
 }
 
-.footer-right img:hover {
-  opacity: 1;
-  transform: scale(1.1);
+/* hover effect */
+.footer-icon:hover {
+  transform: scale(1.2);
+  filter: invert(69%) sepia(80%) saturate(740%) hue-rotate(305deg) brightness(102%) contrast(98%);
 }
