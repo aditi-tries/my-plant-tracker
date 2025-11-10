@@ -108,6 +108,11 @@ footer {
   gap: 1rem;
 }
 
+.footer-right img {
+  vertical-align: middle;
+}
+
+
 /* Consistent icon look */
 .footer-icon {
   width: 28px;
