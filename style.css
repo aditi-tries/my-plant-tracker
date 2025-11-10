@@ -88,3 +88,35 @@ td p {
   padding: 1rem 0;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  margin-top: 30px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.footer-left {
+  margin: 0;
+}
+
+.footer-right a {
+  margin-left: 12px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-right img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-right img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
