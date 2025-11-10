@@ -30,7 +30,9 @@ async function loadMatrix() {
       const row = document.createElement('tr');
       const weekCell = document.createElement('th');
       const date = new Date(weekData.week);
-      weekCell.textContent = date.toDateString();
+      const options = { day: 'numeric', month: 'short' };
+      weekCell.textContent = date.toLocaleDateString('en-GB', options).replace('.', '');
+
       row.appendChild(weekCell);
 
       plants.forEach(plant => {
