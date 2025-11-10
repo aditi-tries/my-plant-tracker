@@ -112,7 +112,6 @@ footer {
   background-color: white;
   font-family: "Poppins", sans-serif;
   color: #4caf50;               /* nice planty green */
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05); /* subtle lift instead of pink line */
   overflow-x: hidden;           /* prevents horizontal scroll */
   box-sizing: border-box;
 }
