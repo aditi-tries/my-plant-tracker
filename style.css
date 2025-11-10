@@ -1,24 +1,34 @@
+/* ----- GENERAL LAYOUT ----- */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   background: transparent;
   padding: 20px;
 }
 
+/* ----- HEADER ----- */
 header {
   display: flex;
-  justify-content: center;   /* centers horizontally */
-  align-items: center;       /* centers vertically (if header has height) */
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 100%;
 }
 
 header h1 {
   margin: 1rem 0;
-  font-size: 1.8rem;         /* adjust for mobile */
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
-
+/* ----- MATRIX TABLE ----- */
 .plant {
   background: white;
   padding: 12px;
@@ -27,11 +37,10 @@ header h1 {
   margin-bottom: 16px;
 }
 
-/* Matrix layout */
 table.matrix {
   border-collapse: collapse;
-  table-layout: fixed;    /* equal column widths */
-  min-width: 600px;       /* ensures table stays wider than small screens */
+  table-layout: fixed;        /* equal column widths */
+  min-width: 600px;           /* ensures table stays wide enough */
   background: transparent;
   margin-top: 20px;
   border-radius: 12px;
@@ -43,7 +52,7 @@ th, td {
   vertical-align: middle;
   padding: 8px;
   border: none;
-  width: 100px;           /* fixed column width */
+  width: 100px;               /* fixed column width */
 }
 
 th {
@@ -58,13 +67,14 @@ td img.plant-img {
 }
 
 #matrix-scroll {
-  overflow-x: auto;       /* enables horizontal scroll when too wide */
+  flex: 1; /* lets the table area expand to fill space above footer */
+  overflow-x: auto;           /* enables horizontal scroll */
   overflow-y: hidden;
   width: 100%;
-  -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
+  -webkit-overflow-scrolling: touch;
 }
 
-/* hover effect */
+/* ----- HOVER EFFECT ----- */
 .plant-img:hover {
   transform: rotate(2deg) scale(1.10);
   filter: drop-shadow(0 2px 2px rgba(0,0,0,0.25));
@@ -81,6 +91,7 @@ td p {
   overflow-wrap: break-word;
 }
 
+/* ----- MAIN HEADING IN TABLE ----- */
 .main-heading {
   text-align: center;
   font-size: 1.8rem;
@@ -88,7 +99,10 @@ td p {
   padding: 1rem 0;
 }
 
+/* ----- FOOTER ----- */
 footer {
+  margin-top: auto; /* pushes footer to bottom */
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,32 +111,30 @@ footer {
   font-family: "Poppins", sans-serif;
   color: #ff7fab;
   background-color: white;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.05); /* subtle shadow for separation */
 }
 
 .footer-left {
   font-size: 1rem;
+  font-style: italic; /* left text italic */
 }
 
+/* ----- FOOTER ICONS ----- */
 .footer-right {
   display: flex;
   gap: 1rem;
 }
 
 .footer-right img {
-  vertical-align: middle;
-}
-
-
-/* Consistent icon look */
-.footer-icon {
   width: 28px;
   height: 28px;
-  filter: invert(61%) sepia(51%) saturate(458%) hue-rotate(305deg) brightness(101%) contrast(97%);
   transition: transform 0.2s ease, filter 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(48%) sepia(66%) saturate(420%) hue-rotate(65deg) brightness(96%) contrast(89%);
 }
 
-/* hover effect */
-.footer-icon:hover {
+/* hover effect on icons */
+.footer-right img:hover {
   transform: scale(1.2);
-  filter: invert(69%) sepia(80%) saturate(740%) hue-rotate(305deg) brightness(102%) contrast(98%);
+  filter: brightness(0) saturate(100%) invert(55%) sepia(93%) saturate(480%) hue-rotate(90deg) brightness(100%) contrast(90%);
 }
+
