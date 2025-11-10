@@ -1,18 +1,5 @@
-// preload pop sound once
-// --- pop sound on hover ---
+// Preload the pop sound once (reuse for all hovers)
 const popSound = new Audio('data/sounds/pop.mp3');
-
-img.addEventListener('mouseenter', () => {
-  const sound = popSound.cloneNode();
-  
-  // random volume between 8% and 15% (half of your current)
-  const minVol = 0.08;
-  const maxVol = 0.15;
-  sound.volume = minVol + Math.random() * (maxVol - minVol);
-  
-  sound.play().catch(() => {}); // ignore autoplay errors
-});
-
 
 async function loadMatrix() {
   try {
@@ -28,8 +15,7 @@ async function loadMatrix() {
     const table = document.createElement('table');
     table.className = 'matrix';
 
-
-    // second row for plant names
+    // Header row for plant names (with an empty top-left cell)
     const nameRow = document.createElement('tr');
     const emptyTh = document.createElement('th');
     emptyTh.textContent = "";
@@ -40,17 +26,23 @@ async function loadMatrix() {
       th.textContent = plant;
       nameRow.appendChild(th);
     });
+
     table.appendChild(nameRow);
 
-    // body
+    // Table body (weeks)
     weeks.forEach(weekData => {
       const row = document.createElement('tr');
+
+      // Date column
       const weekCell = document.createElement('th');
       const date = new Date(weekData.week);
       const options = { day: 'numeric', month: 'short' };
-      weekCell.textContent = date.toLocaleDateString('en-GB', options).replace('.', '');
+      weekCell.textContent = date
+        .toLocaleDateString('en-GB', options)
+        .replace('.', '');
       row.appendChild(weekCell);
 
+      // Cells for each plant
       plants.forEach(plant => {
         const cell = document.createElement('td');
         const update = weekData.updates[plant];
@@ -62,9 +54,13 @@ async function loadMatrix() {
           img.className = 'plant-img';
           img.loading = 'lazy';
 
+          // Pop sound on hover (soft randomized volume)
           img.addEventListener('mouseenter', () => {
             const sound = popSound.cloneNode();
-            sound.play().catch(() => {});
+            const minVol = 0.08;
+            const maxVol = 0.15;
+            sound.volume = minVol + Math.random() * (maxVol - minVol);
+            sound.play().catch(() => {}); // ignore autoplay restrictions
           });
 
           const note = document.createElement('p');
@@ -89,5 +85,6 @@ async function loadMatrix() {
 }
 
 loadMatrix();
+
 
 
