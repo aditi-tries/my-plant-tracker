@@ -1,6 +1,18 @@
 // preload pop sound once
+// --- pop sound on hover ---
 const popSound = new Audio('data/sounds/pop.mp3');
-popSound.volume = 0.3;
+
+img.addEventListener('mouseenter', () => {
+  const sound = popSound.cloneNode();
+  
+  // random volume between 8% and 15% (half of your current)
+  const minVol = 0.08;
+  const maxVol = 0.15;
+  sound.volume = minVol + Math.random() * (maxVol - minVol);
+  
+  sound.play().catch(() => {}); // ignore autoplay errors
+});
+
 
 async function loadMatrix() {
   try {
