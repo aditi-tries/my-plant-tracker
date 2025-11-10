@@ -40,7 +40,7 @@ table.matrix {
 
 th, td {
   text-align: center;
-  vertical-align: top;
+  vertical-align: middle;
   padding: 8px;
   border: none;
   width: 100px;           /* fixed column width */
@@ -81,4 +81,10 @@ td p {
   overflow-wrap: break-word;
 }
 
+.main-heading {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1rem 0;
+}
 
