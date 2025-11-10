@@ -62,6 +62,15 @@ async function loadMatrix() {
           img.src = update.image;
           img.alt = plant;
           img.className = 'plant-img';
+          // --- pop sound on hover ---
+          const popSound = new Audio('data/sounds/pop.mp3');
+          popSound.volume = 0.3;
+
+          img.addEventListener('mouseenter', () => {
+          const sound = popSound.cloneNode(); // allows rapid replays
+          sound.play().catch(() => {}); // ignore autoplay errors
+});
+
 
           const note = document.createElement('p');
           note.textContent = update.note;
