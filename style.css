@@ -4,9 +4,20 @@ body {
   padding: 20px;
 }
 
-header h1 {
-  margin-bottom: 1rem;
+header {
+  display: flex;
+  justify-content: center;   /* centers horizontally */
+  align-items: center;       /* centers vertically (if header has height) */
+  text-align: center;
+  width: 100%;
 }
+
+header h1 {
+  margin: 1rem 0;
+  font-size: 1.8rem;         /* adjust for mobile */
+  font-weight: 600;
+}
+
 
 .plant {
   background: white;
