@@ -2,6 +2,7 @@
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -9,8 +10,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  background: transparent;
-  padding: 20px;
+  background: white;        /* solid background */
+  overflow-x: hidden;       /* prevent horizontal scroll */
 }
 
 /* ----- HEADER ----- */
@@ -26,39 +27,32 @@ header h1 {
   margin: 1rem 0;
   font-size: 1.8rem;
   font-weight: 600;
+  color: black;             /* header text color */
 }
 
 /* ----- MATRIX TABLE ----- */
-.plant {
-  background: white;
-  padding: 12px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-  margin-bottom: 16px;
+#matrix-scroll {
+  flex: 1;                  /* table scroll area expands */
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
 }
 
 table.matrix {
   border-collapse: collapse;
-  table-layout: fixed;        /* equal column widths */
-  min-width: 600px;           /* ensures table stays wide enough */
-  background: transparent;
+  table-layout: fixed;
+  min-width: 600px;
   margin-top: 20px;
-  border-radius: 12px;
-  border: none;
+  background: transparent;
 }
 
 th, td {
   text-align: center;
-  vertical-align: middle;
   padding: 8px;
-  border: none;
-  width: 100px;               /* fixed column width */
+  width: 100px;
 }
 
-th {
-  font-weight: 600;
-}
-
+/* ----- PLANT IMAGE HOVER EFFECT ----- */
 td img.plant-img {
   max-width: 150px;
   border-radius: 8px;
@@ -66,42 +60,14 @@ td img.plant-img {
   background-color: transparent;
 }
 
-#matrix-scroll {
-  flex: 1; /* lets the table area expand to fill space above footer */
-  overflow-x: auto;           /* enables horizontal scroll */
-  overflow-y: hidden;
-  width: 100%;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* ----- HOVER EFFECT ----- */
 .plant-img:hover {
   transform: rotate(2deg) scale(1.10);
   filter: drop-shadow(0 2px 2px rgba(0,0,0,0.25));
 }
 
-td:nth-child(even) .plant-img:hover {
-  transform: rotate(-2deg) scale(1.05);
-}
-
-td p {
-  font-size: 0.9rem;
-  margin-top: 4px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-/* ----- MAIN HEADING IN TABLE ----- */
-.main-heading {
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: 600;
-  padding: 1rem 0;
-}
-
 /* ----- FOOTER ----- */
 footer {
-  position: fixed;          /* sticky at bottom */
+  position: fixed;           /* sticky at bottom */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -109,11 +75,12 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color: white;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; /* same as header/body */
-  color: black;             /* match header text */
+  background-color: white;   /* solid white, no fade */
+  color: black;              /* match header */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   box-sizing: border-box;
-  overflow-x: hidden;
+  box-shadow: none;          /* remove any shadow/fade */
+  z-index: 1000;             /* above table content */
 }
 
 .footer-left {
