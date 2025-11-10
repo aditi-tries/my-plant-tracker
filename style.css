@@ -101,7 +101,7 @@ td p {
 
 /* ----- FOOTER ----- */
 footer {
-  position: fixed;              /* make it sticky at the bottom */
+  position: fixed;          /* sticky at bottom */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -110,40 +110,29 @@ footer {
   align-items: center;
   padding: 1rem 1.5rem;
   background-color: white;
-  font-family: "Poppins", sans-serif;
-  color: #4caf50;               /* nice planty green */
-  overflow-x: hidden;           /* prevents horizontal scroll */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; /* same as header/body */
+  color: black;             /* match header text */
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .footer-left {
   font-size: 1rem;
-  white-space: nowrap;          /* prevent wrapping */
+  white-space: nowrap;
 }
 
 .footer-right {
   display: flex;
-  gap: 1rem;
-  flex-wrap: nowrap;            /* keeps icons in one line */
-  overflow: hidden;             /* ensures they don’t push footer width */
+  gap: 1.5rem;
 }
 
 .footer-right a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
-.footer-icon {
-  width: 24px;
-  height: 24px;
-  filter: invert(44%) sepia(13%) saturate(1555%) hue-rotate(87deg) brightness(91%) contrast(91%);
-  transition: transform 0.2s ease, filter 0.3s ease;
+.footer-right a:hover {
+  text-decoration: underline;
 }
-
-.footer-icon:hover {
-  transform: scale(1.15);
-  filter: invert(30%) sepia(60%) saturate(600%) hue-rotate(90deg) brightness(100%) contrast(90%);
-}
-
-
