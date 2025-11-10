@@ -16,18 +16,6 @@ async function loadMatrix() {
     const table = document.createElement('table');
     table.className = 'matrix';
 
-    // top header row
-    const headerRow = document.createElement('tr');
-    const corner = document.createElement('th');
-    corner.textContent = "";
-    headerRow.appendChild(corner);
-
-    const headingCell = document.createElement('th');
-    headingCell.textContent = "🌱 My Plant Tracker";
-    headingCell.colSpan = plants.length;
-    headingCell.className = 'main-heading';
-    headerRow.appendChild(headingCell);
-    table.appendChild(headerRow);
 
     // second row for plant names
     const nameRow = document.createElement('tr');
