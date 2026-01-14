@@ -88,24 +88,6 @@ async function loadMatrix() {
 
 loadMatrix();
 
-const noButton = document.getElementById('no-button');
-const noResponse = document.getElementById('no-response');
 
-noButton.addEventListener('click', async () => {
-  try {
-    // Calling the No-as-a-Service API
-    const response = await fetch('https://no-as-a-service.vercel.app/api/no');
-    const data = await response.json();
-    
-    // Display the "No" with a little extra sass
-    noResponse.textContent = `${data.no}. Focus on Monsieur and Theodore first! 🌿`;
-    
-    // Optional: add a little shake effect to the response
-    noResponse.classList.add('shake');
-    setTimeout(() => noResponse.classList.remove('shake'), 500);
-  } catch (error) {
-    noResponse.textContent = "Even the API is speechless at your plant addiction.";
-  }
-});
 
 
