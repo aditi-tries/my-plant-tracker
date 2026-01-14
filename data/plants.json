@@ -1,37 +1,42 @@
 {
-  "plants": ["tripod", "monsieur", "topper", "baby", "gin", "chomu", "chacko"],
+  "plants": [
+    "tripod",
+    "monsieur",
+    "topper",
+    "baby",
+    "gin",
+    "chomu",
+    "chacko",
+    "mintu",
+    "piku",
+    "theodore"
+  ],
   "weeks": [
     {
       "week": "2025-11-08",
       "updates": {
-        "chomu": {
-          "note": "growing slowly",
-          "image": "data/images/plant-1.webp"
-        },
-        "monsieur": {
-          "note": "added some mealy bug spray today. very few mealy bugs left!",
-          "image": "data/images/monstera.webp"
-        },
-        "baby": {
-          "note": "i think it has grown as much as it could in this pot. it needs to be repot",
-          "image": "data/images/small-zz.webp"
-        },
-        "tripod": {
-          "note": "it looks like it's going through it but it's a fighter. it will survive.",
-          "image": "data/images/tripod.webp"
-        },
-        "topper": {
-          "note": "this is my smartest child. it is thriving.",
-          "image": "data/images/topper.webp"
-        },
-        "gin": {
-          "note": "it's looking nice as ever",
-          "image": "data/images/gin.webp"
-        },
-        "chacko": {
-          "note": "potted this from some money plant cuttings today!",
-          "image": "data/images/paglu.webp"
-        }
+        "tripod": { "note": "he is a fighter. he looks rough, but he will survive.", "image": "data/images/tripod.webp" },
+        "monsieur": { "note": "he has some mealy bugs so i've added some mealy bug spray today. hoping for a speedy recovery.", "image": "data/images/monstera.webp" },
+        "topper": { "note": "this is my smartest child. she is thriving.", "image": "data/images/topper.webp" },
+        "baby": { "note": "he cannot grow more in this tiny planter, but i kinda want him to not grow up and stay my lil baby forever.", "image": "data/images/small-zz.webp" },
+        "gin": { "note": "she is an elegant lady, looking nice as ever", "image": "data/images/gin.webp" },
+        "chomu": { "note": "he is growing slowly, but looking very bright", "image": "data/images/plant-1.webp" },
+        "chacko": { "note": "he's the newest member -- potted from new money plant cuttings!", "image": "data/images/paglu.webp" }
+      }
+    },
+    {
+      "week": "2026-01-10",
+      "updates": {
+        "tripod": { "note": "Still standing strong.", "image": "data/images/tripod_jan.webp" },
+        "monsieur": { "note": "The mealy bugs are gone! Victory!", "image": "data/images/monsieur_jan.webp" },
+        "topper": { "note": "Living up to its name.", "image": "data/images/topper_jan.webp" },
+        "baby": { "note": "New home, who dis? (Repotted!)", "image": "data/images/baby_jan.webp" },
+        "gin": { "note": "Looking elegant.", "image": "data/images/gin_jan.webp" },
+        "chomu": { "note": "Slow and steady wins the race.", "image": "data/images/chomu_jan.webp" },
+        "chacko": { "note": "The cuttings are finally rooting.", "image": "data/images/chacko_jan.webp" },
+        "mintu": { "note": "New addition! Smells amazing.", "image": "data/images/mintu.webp" },
+        "piku": { "note": "A bit shy, but settling in.", "image": "data/images/piku.webp" },
+        "theodore": { "note": "The distinguished gentleman of the group.", "image": "data/images/theodore.webp" }
       }
     }
   ]
