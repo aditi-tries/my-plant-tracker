@@ -9,6 +9,8 @@ async function loadMatrix() {
     const data = await res.json();
     const { plants, weeks } = data;
 
+    weeks.reverse();
+    
     const container = document.querySelector('#matrix-scroll');
     container.innerHTML = '';
 
