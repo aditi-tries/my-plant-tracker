@@ -16,27 +16,27 @@
       "week": "2025-11-08",
       "updates": {
         "tripod": { "note": "he is a fighter. he looks rough, but he will survive.", "image": "data/images/tripod.webp" },
-        "monsieur": { "note": "he has some mealy bugs so i've added some mealy bug spray today. hoping for a speedy recovery.", "image": "data/images/monstera.webp" },
+        "monsieur": { "note": "he has some mealy bugs so i've added some mealy bug spray today. hoping for a speedy recovery.", "image": "data/images/monsieur.webp" },
         "topper": { "note": "this is my smartest child. she is thriving.", "image": "data/images/topper.webp" },
-        "baby": { "note": "he cannot grow more in this tiny planter, but i kinda want him to not grow up and stay my lil baby forever.", "image": "data/images/small-zz.webp" },
+        "baby": { "note": "he cannot grow more in this tiny planter, but i kinda want him to not grow up and stay my lil baby forever.", "image": "data/images/baby.webp" },
         "gin": { "note": "she is an elegant lady, looking nice as ever", "image": "data/images/gin.webp" },
-        "chomu": { "note": "he is growing slowly, but looking very bright", "image": "data/images/plant-1.webp" },
-        "chacko": { "note": "he's the newest member -- potted from new money plant cuttings!", "image": "data/images/paglu.webp" }
+        "chomu": { "note": "he is growing slowly, but looking very bright", "image": "data/images/chomu.webp" },
+        "chacko": { "note": "he's the newest member -- potted from new money plant cuttings!", "image": "data/images/chacko.webp" }
       }
     },
     {
       "week": "2026-01-10",
       "updates": {
-        "tripod": { "note": "Still standing strong.", "image": "data/images/tripod_jan.webp" },
-        "monsieur": { "note": "The mealy bugs are gone! Victory!", "image": "data/images/monsieur_jan.webp" },
-        "topper": { "note": "Living up to its name.", "image": "data/images/topper_jan.webp" },
-        "baby": { "note": "New home, who dis? (Repotted!)", "image": "data/images/baby_jan.webp" },
-        "gin": { "note": "Looking elegant.", "image": "data/images/gin_jan.webp" },
-        "chomu": { "note": "Slow and steady wins the race.", "image": "data/images/chomu_jan.webp" },
-        "chacko": { "note": "The cuttings are finally rooting.", "image": "data/images/chacko_jan.webp" },
-        "mintu": { "note": "New addition! Smells amazing.", "image": "data/images/mintu.webp" },
-        "piku": { "note": "A bit shy, but settling in.", "image": "data/images/piku.webp" },
-        "theodore": { "note": "The distinguished gentleman of the group.", "image": "data/images/theodore.webp" }
+        "tripod": { "note": "he had some mealy bugs, but i've cleaned everything today, so let's see.", "image": "data/images/tripod_10jan.webp" },
+        "monsieur": { "note": "the mealy bugs have gotten worse. i had to cut off some badly affected parts.", "image": "data/images/monsieur_10jan.webp" },
+        "topper": { "note": "she continues to live up to her name. i may need to repot her soon so she can grow more.", "image": "data/images/topper_10jan.webp" },
+        "baby": { "note": "still my pretty lil baby.", "image": "data/images/baby_10jan.webp" },
+        "gin": { "note": "she's looking rough cause i haven't been around to take care of my plants much.", "image": "data/images/gin_10jan.webp" },
+        "chomu": { "note": "he has grown a bit but has some mealy bugs, so i had to cut off a couple leaves.", "image": "data/images/chomu_10jan.webp" },
+        "chacko": { "note": "chacko is also showing a lot of growth and promise, but has sadly also been affected by mealy bugs.", "image": "data/images/chacko_10jan.webp" },
+        "mintu": { "note": "he is a new mint plant and i'm excited to use it's leaves in my food!", "image": "data/images/mintu_10jan.webp" },
+        "piku": { "note": "she is a new addition -- a gorgeous peace lily, and she will be rooming with me.", "image": "data/images/piku_10jan.webp" },
+        "theodore": { "note": "he's a new member, looks very wise and old.", "image": "data/images/theodore_10jan.webp" }
       }
     }
   ]
