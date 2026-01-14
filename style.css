@@ -133,3 +133,44 @@ tr th:first-child {
   background-color: white;
   z-index: 11;
 }
+
+.intervention-zone {
+  text-align: center;
+  margin: 20px 0;
+  padding: 15px;
+  background: #fafafa;
+  border-radius: 12px;
+}
+
+#no-button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: transform 0.2s;
+}
+
+#no-button:hover {
+  transform: scale(1.05);
+  background: #333;
+}
+
+#no-response {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #d93025; /* A subtle 'warning' red */
+  min-height: 1.2rem;
+}
+
+/* A fun little shake animation */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+.shake { animation: shake 0.4s ease-in-out; }
