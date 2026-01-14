@@ -116,3 +116,20 @@ td {
   vertical-align: top;    /* Aligns all notes to the top so they stay level */
   padding-bottom: 20px;   /* Adds space at the bottom of the cell */
 }
+
+/* Keep the plant names at the top when scrolling */
+th {
+  position: sticky;
+  top: 0;
+  background-color: white; /* Prevents text overlap while scrolling */
+  z-index: 10;
+  border-bottom: 1px solid #eee;
+}
+
+/* Keep the dates on the left when scrolling sideways */
+tr th:first-child {
+  position: sticky;
+  left: 0;
+  background-color: white;
+  z-index: 11;
+}
