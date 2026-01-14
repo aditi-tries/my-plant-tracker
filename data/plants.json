@@ -8,11 +8,11 @@
           "note": "growing slowly",
           "image": "data/images/plant-1.webp"
         },
-        "monstera": {
+        "monsieur": {
           "note": "added some mealy bug spray today. very few mealy bugs left!",
           "image": "data/images/monstera.webp"
         },
-        "baby_zz": {
+        "baby": {
           "note": "i think it has grown as much as it could in this pot. it needs to be repot",
           "image": "data/images/small-zz.webp"
         },
@@ -28,7 +28,7 @@
           "note": "it's looking nice as ever",
           "image": "data/images/gin.webp"
         },
-        "paglu": {
+        "chacko": {
           "note": "potted this from some money plant cuttings today!",
           "image": "data/images/paglu.webp"
         }
