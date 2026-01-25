@@ -16,7 +16,7 @@
       "week": "2025-11-08",
       "updates": {
         "tripod": { "note": "he is a fighter. he looks rough, but he will survive.", "image": "data/images/tripod.webp" },
-        "monsieur": { "note": "he has some mealy bugs so i've added some mealy bug spray today. hoping for a speedy recovery.", "image": "data/images/monsieur.webp" },
+        "monsieur": { "note": "he has some mealy bugs so i've added some mealy bug spray. hoping for a speedy recovery.", "image": "data/images/monsieur.webp" },
         "topper": { "note": "this is my smartest child. she is thriving.", "image": "data/images/topper.webp" },
         "baby": { "note": "he cannot grow more in this tiny planter, but i kinda want him to not grow up and stay my lil baby forever.", "image": "data/images/baby.webp" },
         "gin": { "note": "she is an elegant lady, looking nice as ever", "image": "data/images/gin.webp" },
@@ -27,7 +27,7 @@
     {
       "week": "2026-01-10",
       "updates": {
-        "tripod": { "note": "he had some mealy bugs, but i've cleaned everything today, so let's see.", "image": "data/images/tripod_10jan.webp" },
+        "tripod": { "note": "after months, there's finally a new leaf! he has some mealy bugs, but i've been using the mealy bug spray, so let's see.", "image": "data/images/tripod_10jan.webp" },
         "monsieur": { "note": "the mealy bugs have gotten worse. i had to cut off some badly affected parts.", "image": "data/images/monsieur_10jan.webp" },
         "topper": { "note": "she continues to live up to her name. i may need to repot her soon so she can grow more.", "image": "data/images/topper_10jan.webp" },
         "baby": { "note": "still my pretty lil baby.", "image": "data/images/baby_10jan.webp" },
