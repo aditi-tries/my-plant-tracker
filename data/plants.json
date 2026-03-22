@@ -38,6 +38,21 @@
         "piku": { "note": "she is a new addition -- a gorgeous peace lily, and she will be rooming with me.", "image": "data/images/piku_10jan.webp" },
         "theodore": { "note": "he's a new member, looks very wise and old.", "image": "data/images/theodore_10jan.webp" }
       }
+    },
+    {
+      "week": "2026-02-12",
+      "updates": {
+        "tripod": { "note": "there's a new leaf!!! lots of mealy bugs on it, but i'm killing them as and when i can.", "image": "data/images/tripod_feb.webp" },
+        "monsieur": { "note": "i had to cut off more leaves cause the mealy bugs had gotten to them. :(", "image": "data/images/monsieur_feb.webp" },
+        "topper": { "note": "she is doing so well!", "image": "data/images/topper_feb.webp" },
+        "baby": { "note": "baby looks good", "image": "data/images/baby_feb.webp" },
+        "gin": { "note": "gin looks the same.", "image": "data/images/gin_feb.webp" },
+        "chomu": { "note": "chomu has grown a little and i love this shade of green and the way the stem curls.", "image": "data/images/chomu_feb.webp" },
+        "chacko": { "note": "chacko is growing slowly but steadily.", "image": "data/images/chacko_feb.webp" },
+        "mintu": { "note": "mintu has given me yum leaves, but it dries up so quickly.", "image": "data/images/mintu_feb.webp" },
+        "piku": { "note": "i've learnt that piku is very dramatic. she doesn't get water for a day and all her leaves droop to the floor. she had too much pollen. she is currently not rooming with me.", "image": "data/images/piku_feb.webp" },
+        "theodore": { "note": "theodore is not dramatic at all. he is always the same, so reliable.", "image": "data/images/theodore_feb.webp" }
+      }
     }
   ]
 }
