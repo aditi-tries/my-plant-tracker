@@ -43,15 +43,30 @@
       "week": "2026-02-12",
       "updates": {
         "tripod": { "note": "there's a new leaf!!! lots of mealy bugs on it, but i'm killing them as and when i can.", "image": "data/images/tripod_feb.webp" },
-        "monsieur": { "note": "i had to cut off more leaves cause the mealy bugs had gotten to them. :(", "image": "data/images/monsieur_feb.webp" },
+        "monsieur": { "note": "i had to cut off more leaves cause the mealy bugs had gotten to them :(", "image": "data/images/monsieur_feb.webp" },
         "topper": { "note": "she is doing so well!", "image": "data/images/topper_feb.webp" },
         "baby": { "note": "baby looks good", "image": "data/images/baby_feb.webp" },
         "gin": { "note": "gin looks the same.", "image": "data/images/gin_feb.webp" },
         "chomu": { "note": "chomu has grown a little and i love this shade of green and the way the stem curls.", "image": "data/images/chomu_feb.webp" },
         "chacko": { "note": "chacko is growing slowly but steadily.", "image": "data/images/chacko_feb.webp" },
         "mintu": { "note": "mintu has given me yum leaves, but it dries up so quickly.", "image": "data/images/mintu_feb.webp" },
-        "piku": { "note": "i've learnt that piku is very dramatic. she doesn't get water for a day and all her leaves droop to the floor. she had too much pollen. she is currently not rooming with me.", "image": "data/images/piku_feb.webp" },
+        "piku": { "note": "piku is very dramatic. she doesn't get water for a day and all her leaves droop to the floor. she had too much pollen. she is currently not rooming with me.", "image": "data/images/piku_feb.webp" },
         "theodore": { "note": "theodore is not dramatic at all. he is always the same, so reliable.", "image": "data/images/theodore_feb.webp" }
+      }
+    }
+    {
+      "week": "2026-03-27",
+      "updates": {
+        "tripod": { "note": "the new leaf is bigger and brighter. there's still a few mealy bugs, but lesser than before.", "image": "data/images/tripod_mar.webp" },
+        "monsieur": { "note": "monsieur had to be euthanized because the mealy bugs had gotten to the last leaf. you've been with me for so long, it feels sad that you're no longer chilling in my balcony.", "image": "data/images/monsieur_mar.webp" },
+        "topper": { "note": "she keeps growing. she's gotten huge!", "image": "data/images/topper_mar.webp" },
+        "baby": { "note": "baby is growing too!!!", "image": "data/images/baby_mar.webp" },
+        "gin": { "note": "gin has a smol new leaf.", "image": "data/images/gin_mar.webp" },
+        "chomu": { "note": "chomu is growing nicely. it's getting a bit more sun than it should though.", "image": "data/images/chomu_mar.webp" },
+        "chacko": { "note": "chacko had a growth spurt! he's dense and handsome.", "image": "data/images/chacko_mar.webp" },
+        "mintu": { "note": "mintu is really fighting for his life.", "image": "data/images/mintu_mar.webp" },
+        "piku": { "note": "piku is doing well, she had a new peacy lily this month!", "image": "data/images/piku_mar.webp" },
+        "theodore": { "note": "theodore is looking good.", "image": "data/images/theodore_mar.webp" }
       }
     }
   ]
