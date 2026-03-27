@@ -10,8 +10,16 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  background: white;        /* solid background */
-  overflow-x: hidden;       /* prevent horizontal scroll */
+  background: white;
+  overflow-x: hidden;
+  overflow-y: auto; /* Ensure this is auto/visible */
+}
+
+/* Let the matrix container expand naturally */
+#matrix-scroll {
+  width: 100%;
+  overflow-x: auto; /* Keep horizontal scroll for wide tables */
+  margin-bottom: 100px; /* Space for the fixed footer */
 }
 
 /* ----- HEADER ----- */
@@ -28,14 +36,6 @@ header h1 {
   font-size: 1.8rem;
   font-weight: 600;
   color: black;             /* header text color */
-}
-
-/* ----- MATRIX TABLE ----- */
-#matrix-scroll {
-  flex: 1;                  /* table scroll area expands */
-  overflow-x: auto;
-  overflow-y: hidden;
-  width: 100%;
 }
 
 table.matrix {
