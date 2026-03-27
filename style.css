@@ -5,21 +5,22 @@ html, body {
   padding: 0;
 }
 
+/* 1. Update the body to allow natural scrolling */
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; /* Keeps the footer at the bottom even on empty pages */
+  margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   background: white;
-  overflow-x: hidden;
-  overflow-y: auto; /* Ensure this is auto/visible */
 }
 
-/* Let the matrix container expand naturally */
+/* 2. Make the matrix container grow to push the footer down */
 #matrix-scroll {
+  flex: 1; 
   width: 100%;
-  overflow-x: auto; /* Keep horizontal scroll for wide tables */
-  margin-bottom: 100px; /* Space for the fixed footer */
+  overflow-x: auto; /* Keeps horizontal scrolling for the table */
+  padding-bottom: 40px; /* A nice gap before the footer starts */
 }
 
 /* ----- HEADER ----- */
@@ -66,21 +67,17 @@ td img.plant-img {
 }
 
 /* ----- FOOTER ----- */
+/* 3. Change footer from 'fixed' to 'relative' or 'static' */
 footer {
-  position: fixed;           /* sticky at bottom */
-  bottom: 0;
-  left: 0;
+  position: relative; /* It now sits after the content instead of floating */
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
-  background-color: white;   /* solid white, no fade */
-  color: black;              /* match header */
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  box-sizing: border-box;
-  box-shadow: none;          /* remove any shadow/fade */
-  z-index: 1000;             /* above table content */
+  padding: 2rem 1.5rem; /* Increased padding for a better look */
+  background-color: white;
+  color: black;
+  border-top: 1px solid #eee; /* Optional: adds a nice subtle line above the footer */
 }
 
 .footer-left {
@@ -132,4 +129,9 @@ tr th:first-child {
   left: 0;
   background-color: white;
   z-index: 11;
+}
+
+img[src*="RIP.webp"] {
+  filter: grayscale(100%) sepia(20%);
+  opacity: 0.8;
 }
